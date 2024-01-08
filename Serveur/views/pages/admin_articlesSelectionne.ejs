@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitre %></title>
+    <link href="/CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/nav.css">
+    <link rel="stylesheet" href="/CSS/articleSelectionne.css">
+    <script src="/JS/nav.js"></script>
+    <script src="/JS/creerReview.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+</head>
+
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="/" class="logo">
+        <h1>CityMarket</h1>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/articles">Articles</a></li> 
+          <li><a href="/panier">Panier</a></li>
+          <li><a href="/apropos">À propos</a></li>
+          <li><a href="/connexion"><%= page %></a></li>
+          <li><a href="/inscription">Inscription</a></li>
+        </ul>
+      </nav>
+    </div>
+</header>
+
+<body>
+    <div class="imageEtDescription">
+      <img id="image" src="<%= item.image %>" alt="">
+      <br><br>
+      <h2 id="descArticle">Description de l'article:</h2>
+      <p id="desc"><%= item.description %></p>
+    </div>
+    <div class="payerArticle">
+      <h1 id="nomArticle"><%= item.marque_vetement %> - <%= item.nom_vetement %></h1>
+      <br><br>
+      <h3 id="taille">Taille: <%= item.taille_vetement %></h3>
+      <br><br>
+      <h2 id="prix"><%= item.prix %> $</h2>
+      <br><br><br>
+      <a href="/panier"><button id="boutonAjouterPanier">Ajouter au panier</button></a>
+    </div>
+    <div class="hr-container">
+      <hr>
+    </div>
+    <div>
+      <br>
+      <button id="creerReview">Écrire un commentaire</button>
+      <br><br>
+    </div>
+
+    <div class="reviews" id="ecrireReview" style="display: none;">
+      <div class="client_review">
+        <br>
+        <form>    
+          <label for="commentaire">Commentaire:</label><br>
+          <hr>
+          <textarea id="commentaire" name="commentaire"></textarea>
+          <br>
+          <br>
+          <button type="submit" id="buttonSoumettre">Soumettre</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="reviews">
+      <br><br>
+      <% review.forEach(function(review) { %>
+        <div class="client_review">
+          <div class="contenu_review">
+            <div class="client_info">
+              <img id="image_client" src="/images/default_user.png" alt="">
+              <div class="client_details">
+                <h3><%= review.nom %> <%= review.prenom %></h3>
+                <span class="date"><%= review.date_creation.toDateString() %></span>
+              </div>
+            </div>
+            <hr>
+            <p><%= review.commentaire %></p>
+          </div>
+        </div>
+        <br><br>
+        <% }); %>
+    </div>
+</body>
+</html>

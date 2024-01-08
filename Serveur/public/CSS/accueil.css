@@ -1,0 +1,413 @@
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.box{
+  position: relative;
+  width: 380px;
+  height: 420px;
+  background: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.box::before{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg,transparent, transparent, #45f3ff,#45f3ff,#45f3ff );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+
+.box::after{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg,transparent, transparent, #45f3ff,#45f3ff,#45f3ff );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+
+@keyframes animate{
+  0%
+  {
+      transform: rotate(0deg);
+  }
+  100%
+  {
+      transform: rotate(360deg);
+  }
+}
+
+.box form{
+  position: absolute;
+  inset: 4px;
+  background: #224;
+  padding: 50px 40px;
+  border-radius: 8px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.box form h2
+{
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.box form .inputBox {
+  position: relative;
+  width: 300px;
+  margin-top: 35px;
+}
+
+.box form .inputBox input
+{
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background:  transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.box form .inputBox span{
+ position: absolute;
+ left: 0;
+ padding: 20px 10px 10px;
+ pointer-events: none;
+ color: #8f8f8f;
+ font-size: 1em;
+ letter-spacing: 0.05em;
+ transition: 0.5s;
+}
+.box form .inputBox input:valid ~ span,
+.box form .inputBox input:focus ~ span
+{
+  color: #fff;
+  font-size: 0.75em;
+ transform: translateY(-34px);
+}
+
+.box form .inputBox i
+{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width:  100%;
+  height: 2px;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  pointer-events: none;
+
+}
+
+.box form .inputBox input:valid ~ i,
+.box form .inputBox input:focus ~ i{
+  height: 44px;
+}
+
+
+.box form .links
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.box form .links a
+{
+  margin: 10 px 0;
+  font-size: 0.75em;
+  color: #8f8f8f;
+  text-decoration: none;
+}
+
+.box form .links a:hover,
+.box form .links a:nth-child(2){
+  color: #fff;
+}
+
+.box form input[type="submit"]
+{
+  border: none;
+  outline: none;
+  padding: 9px 25px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.9em;
+  border-radius: 4px;
+  font-weight: 600;
+  width: 200px;
+  margin-top: 10px;
+
+}
+
+.box form input[type="submit"]:active
+{
+  opacity: 0.8;
+}
+
+
+
+#about-us img {  
+  height: auto;
+   width: 420px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#about-us img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+#about-us{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#about-us-text{
+  width: 550px;
+} 
+
+#about-us-text h1 {
+  color: aliceblue;
+  font-size: 80px;
+  text-transform: capitalize;
+  margin-bottom: 20px;  
+}
+
+#about-us-text h5 {
+  color: aliceblue;
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 25px;  
+  letter-spacing: 2px;
+}
+
+#span{
+  color: #f9004d;
+}
+
+#apropos{
+  background: #f9004d;
+  color: aliceblue;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: transform 0.3s ease-in-out;  
+}
+
+#apropos:hover{
+  background: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+  transform: scale(1.05); 
+  transition: transform 0.3s ease-in-out; 
+}
+
+@media only screen and (max-width: 1030px) {
+  #about-us {
+    flex-direction: column-reverse; 
+  }
+  #about-us-image {
+      width: 100%; 
+      margin-bottom: 20px; 
+    }
+  
+    #about-us-text {
+      width: 100%; 
+    }
+
+    #apropos{ 
+      width: 100%; 
+      margin-bottom: 20px; 
+      
+      }
+
+      #articles{ 
+          width: 100%; 
+          margin-bottom: 20px; 
+          
+          }
+
+  }
+
+/* Style pour la section Nos Collections */
+.slideshow {
+  position: relative;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+ }
+
+
+
+.slideshow-container img:hover {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease-in-out; 
+}
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+  flex-shrink: 0;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#articles{
+  background: #f9004d;
+  color: aliceblue;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: transform 0.3s ease-in-out; 
+  width: 100%         
+}
+
+#articles:hover{
+  background: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+  transform: scale(1.05); 
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Style pour la section Contact Us */
+#contact-us {
+  background-color: #e0e0e0;
+  padding: 50px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  padding: 10px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #111;
+}
+
+.hidden {
+  display: none;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #00A4BD;
+}
+
+
+

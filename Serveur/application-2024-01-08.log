@@ -1,0 +1,55 @@
+{"level":"info","message":"Erreur de connexion.","service":"MongoDB"}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"level":"info","ok":0,"service":"MongoDB"}
+{"level":"info","message":"Erreur de connexion.","service":"MongoDB"}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"level":"info","ok":0,"service":"MongoDB"}
+{"level":"info","message":"Connexion réussite à MongoDB!","service":"MongoDB"}
+{"level":"info","message":"Bienvenue, vous etes connecté","service":"MongoDB"}
+{"level":"info","message":"582945","service":"MongoDB"}
+{"level":"info","message":"/images/nike_RedHoodie.jpg","service":"MongoDB"}
+{"level":"info","message":"Nike","service":"MongoDB"}
+{"level":"info","message":"Hoodie Rouge","service":"MongoDB"}
+{"level":"info","message":"Medium","service":"MongoDB"}
+{"level":"info","message":"45","service":"MongoDB"}
+{"level":"info","message":"Un vetement a ete ajouter..","service":"MongoDB"}
+{"level":"info","message":"127935","service":"MongoDB"}
+{"level":"info","message":"/images/gucciTrackPants.jpg","service":"MongoDB"}
+{"level":"info","message":"Gucci","service":"MongoDB"}
+{"level":"info","message":"Pantalons sportifs","service":"MongoDB"}
+{"level":"info","message":"Large","service":"MongoDB"}
+{"level":"info","message":"40","service":"MongoDB"}
+{"level":"info","message":"Un vetement a ete ajouter..","service":"MongoDB"}
+{"level":"info","message":"582945","service":"MongoDB"}
+{"level":"info","message":"/images/nike_RedHoodie.jpg","service":"MongoDB"}
+{"level":"info","message":"Nike","service":"MongoDB"}
+{"level":"info","message":"Hoodie Rouge","service":"MongoDB"}
+{"level":"info","message":"Medium","service":"MongoDB"}
+{"level":"info","message":"45","service":"MongoDB"}
+{"level":"info","message":"Un vetement a ete ajouter..","service":"MongoDB"}
+{"level":"info","message":"520504","service":"MongoDB"}
+{"level":"info","message":"/images/adidasBlackPants.jpg","service":"MongoDB"}
+{"level":"info","message":"Adidas","service":"MongoDB"}
+{"level":"info","message":"Pantalons noires","service":"MongoDB"}
+{"level":"info","message":"Medium","service":"MongoDB"}
+{"level":"info","message":"39","service":"MongoDB"}
+{"level":"info","message":"Un vetement a ete ajouter..","service":"MongoDB"}
+{"level":"info","message":"582945","service":"MongoDB"}
+{"level":"info","message":"/images/nike_RedHoodie.jpg","service":"MongoDB"}
+{"level":"info","message":"Nike","service":"MongoDB"}
+{"level":"info","message":"Hoodie Rouge","service":"MongoDB"}
+{"level":"info","message":"Medium","service":"MongoDB"}
+{"level":"info","message":"45","service":"MongoDB"}
+{"level":"info","message":"Un vetement a ete ajouter..","service":"MongoDB"}
+{"level":"info","message":"190042","service":"MongoDB"}
+{"level":"info","message":"/images/gucciBlackHoodie.png","service":"MongoDB"}
+{"level":"info","message":"Gucci","service":"MongoDB"}
+{"level":"info","message":"Hoodie Noir","service":"MongoDB"}
+{"level":"info","message":"XX-Large","service":"MongoDB"}
+{"level":"info","message":"45","service":"MongoDB"}
+{"level":"info","message":"Un vetement a ete ajouter..","service":"MongoDB"}
+{"level":"info","message":"581028","service":"MongoDB"}
+{"level":"info","message":"/images/adidasGreenShirt.png","service":"MongoDB"}
+{"level":"info","message":"Adidas","service":"MongoDB"}
+{"level":"info","message":"Shirt vert","service":"MongoDB"}
+{"level":"info","message":"Petit","service":"MongoDB"}
+{"level":"info","message":"25","service":"MongoDB"}
+{"level":"info","message":"Un vetement a ete ajouter..","service":"MongoDB"}

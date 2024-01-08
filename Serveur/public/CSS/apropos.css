@@ -1,0 +1,198 @@
+body {
+    background-color: gray;
+    background-size: 30%;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+}
+
+.rectangleRouge {
+    width: 400px;
+    height:  50px;
+    background-color: A95454;
+    border-radius: 20px;
+    justify-content: cen;
+}
+
+.hasbullahPicture{
+    
+    opacity: 0.5;
+    height: 102%;
+
+    position: fixed;
+    top: 146px;
+    left: 1200px;
+    background-repeat: no-repeat;
+    background-position: bottom right; 
+
+}
+
+.textmillieu {
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    max-width: 70%;
+    color:aqua;
+    
+  }
+
+  .textmillieu2 {
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    max-width: 70%;
+    color:aqua;
+  }
+
+  
+  
+  .text {
+    color:red;
+    text-align: top;
+    font-size: 35px;
+    max-width: 80%;
+    opacity: 1;
+    height: 100%;
+  }
+
+  .text2 {
+    color:aqua;
+    text-align: top;
+    height:90%;
+    font-size: 30px;
+    max-width: 70%;
+    opacity: 1.2;
+}
+
+ .text3 {
+    color:aqua;
+    text-align: top;
+    height:400%;
+    font-size: 30px;
+    max-width: 70%;
+ }
+#test {
+    
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 15%;
+    
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+#logo {
+    background-color: black;
+    height: 50px;
+}
+
+h1 {
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.header {
+    padding-top: 30px;
+    color: #fdfdfd;
+    font-size: 20px;
+    margin: auto;
+    line-height: 50px;
+}
+
+.sub-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teams {
+    margin: 10px;
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.teams:hover {
+    background: #000000;
+    border-radius: 12px;
+}
+
+.teams img {
+    width: 10vw;
+    height: 11.5vw;
+}
+
+.name {
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fd0000;
+}
+
+.desig {
+    font-style: italic;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.about {
+    margin: 20px 0;
+    font-weight: lighter;
+    color: #ffffff;
+}
+
+.social-links {
+    margin: 14px;
+}
+
+.social-links a {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    transition: .4s;
+}
+
+.social-links a:hover {
+    transform: scale(1.5);
+    
+}
+
+
+.social-links a i {
+    color: rgb(240, 36, 148);
+}
+
+@media screen and (max-width: 985px) {
+    .teams {
+        max-width: 100%;
+    }
+    .teams img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.hidden {
+    display: none;
+  }
