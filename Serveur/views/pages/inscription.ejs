@@ -28,12 +28,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto py-4 py-lg-0">
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Accueil</a></li>
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/articles">Articles</a></li>
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/panier">Panier</a></li>
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/apropos">À propos</a></li>
+              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
+              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/articles">Items</a></li>
+              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/panier">Cart</a></li>
+              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/apropos">About</a></li>
               <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/connexion"><%= page %></a></li>
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/inscription">Inscription</a></li>
+              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/inscription">Register</a></li>
               <li class="nav-item hidden" id="ID" ><a class="nav-link px-lg-3 py-3 py-lg-4"  href="/admin_articles">Admin</a></li>
           </ul>
       </div>
@@ -54,7 +54,7 @@
       <div class="inputBox">
    
           <form action="/creer-utilisateur" method="POST"> 
-            <h2>Rejoins-nous</h2>
+            <h2>Join us</h2>
                 <div class="inputBox">
                   <input
                     type="text"
@@ -65,7 +65,7 @@
                     maxlength="50"
                     size="20"
                   />
-                  <span>Votre adresse courriel</span>
+                  <span>Your email address</span>
                   <i></i>
                 </div>
 
@@ -79,7 +79,7 @@
                   maxlength="50"
                   size="20"
                   />
-                  <span>Nom</span>
+                  <span>Last name</span>
                   <i></i>
                 </div>
 
@@ -93,7 +93,7 @@
                   maxlength="50"
                   size="20"
                   />
-                  <span>Prenom</span>
+                  <span>First name</span>
                   <i></i>
                 </div>
 
@@ -107,7 +107,7 @@
                   maxlength="50"
                   size="20"
                   />
-                  <span>adresse</span>
+                  <span>Address</span>
                   <i></i>
                 </div>
 
@@ -121,7 +121,7 @@
                   maxlength="50"
                   size="20"
                   />
-                  <span>Telephone</span>
+                  <span>Phone</span>
                   <i></i>
                 </div>
 
@@ -136,7 +136,7 @@
                     maxlength="50"
                     size="20"
                   />
-                  <span>Mot de passe</span>
+                  <span>Password</span>
                   <i></i>
                 </div>
 
@@ -150,15 +150,15 @@
                     maxlength="50"
                     size="20"
                   />
-                  <span> Re-écrire Mot de passe</span>
+                  <span> Rewrite password</span>
                   <i></i>
                 </div>
 
                 <div class="links">
-                  <a href="/oublier-mdp"> Oublié mot de passe</a>
-                  <a href="/inscription">Inscription</a>
+                  <a href="/oublier-mdp"> Forgot password</a>
+                  <a href="/inscription">Register</a>
                 </div>
-          <input type="submit" value="Creer compte">
+          <input type="submit" value="Create account">
             </form> 
             
       </div>

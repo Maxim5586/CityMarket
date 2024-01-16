@@ -19,12 +19,12 @@
       </a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/articles">Articles</a></li> 
-          <li><a href="/panier">Panier</a></li>
-          <li><a href="/apropos">À propos</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/articles">Items</a></li> 
+          <li><a href="/panier">Cart</a></li>
+          <li><a href="/apropos">About</a></li>
           <li><a href="/connexion"><%= page %></a></li>
-          <li><a href="/inscription">Inscription</a></li>
+          <li><a href="/inscription">Register</a></li>
         </ul>
       </nav>
     </div>
@@ -34,24 +34,24 @@
     <div class="imageEtDescription">
       <img id="image" src="<%= item.image %>" alt="">
       <br><br>
-      <h2 id="descArticle">Description de l'article:</h2>
+      <h2 id="descArticle">Item Description:</h2>
       <p id="desc"><%= item.description %></p>
     </div>
     <div class="payerArticle">
       <h1 id="nomArticle"><%= item.marque_vetement %> - <%= item.nom_vetement %></h1>
       <br><br>
-      <h3 id="taille">Taille: <%= item.taille_vetement %></h3>
+      <h3 id="taille">Size: <%= item.taille_vetement %></h3>
       <br><br>
       <h2 id="prix"><%= item.prix %> $</h2>
       <br><br><br>
-      <a href="/panier"><button id="boutonAjouterPanier">Ajouter au panier</button></a>
+      <a href="/panier"><button id="boutonAjouterPanier">Add to cart</button></a>
     </div>
     <div class="hr-container">
       <hr>
     </div>
     <div>
       <br>
-      <button id="creerReview">Écrire un commentaire</button>
+      <button id="creerReview">Write a comment</button>
       <br><br>
     </div>
 
@@ -59,12 +59,12 @@
       <div class="client_review">
         <br>
         <form>    
-          <label for="commentaire">Commentaire:</label><br>
+          <label for="commentaire">Comment:</label><br>
           <hr>
           <textarea id="commentaire" name="commentaire"></textarea>
           <br>
           <br>
-          <button type="submit" id="buttonSoumettre">Soumettre</button>
+          <button type="submit" id="buttonSoumettre">Submit</button>
         </form>
       </div>
     </div>

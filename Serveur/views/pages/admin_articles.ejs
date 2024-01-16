@@ -27,12 +27,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto py-4 py-lg-0">
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Accueil</a></li>
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/articles">Articles</a></li>
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/panier">Panier</a></li>
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/apropos">À propos</a></li>
+              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
+              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/articles">Items</a></li>
+              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/panier">Cart</a></li>
+              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/apropos">About</a></li>
               <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/connexion"><%= page %></a></li>
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/inscription">Inscription</a></li>
+              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/inscription">Register</a></li>
               <li class="nav-item hidden" id="ID" ><a class="nav-link px-lg-3 py-3 py-lg-4"  href="/admin_articles">Admin</a></li>
           </ul>
       </div>
@@ -56,9 +56,9 @@
 <center>
 <div id="container">  
   <div class="filter-group">
-    <label for="brand-filter" style="color: whitesmoke;">Marque:</label>
+    <label for="brand-filter" style="color: whitesmoke;">Brand:</label>
     <select id="brand-filter">
-      <option value="all">Toutes</option>
+      <option value="all">All</option>
       <option value="Puma">Puma</option>
       <option value="Nike">Nike</option>
       <option value="Adidas">Adidas</option>
@@ -68,9 +68,9 @@
   </div>
 
   <div class="filter-group">
-    <label for="sort-order" style="color: whitesmoke;">Taille :</label>
+    <label for="sort-order" style="color: whitesmoke;">Size :</label>
     <select id="size-filter">
-      <option value="all">Toutes les tailles</option>
+      <option value="all">All sizes</option>
       <option value="Petit">Petit</option>
       <option value="Medium">Medium</option>
       <option value="Large">Large</option>
@@ -80,11 +80,11 @@
   </div>
 
   <div class="filter-group">
-    <label for="sort-order" style="color: whitesmoke;">Prix :</label>
+    <label for="sort-order" style="color: whitesmoke;">Price :</label>
     <select id="sort-order">
-      <option value="default">Par défaut</option>
-      <option value="price-asc">Croissant</option>
-      <option value="price-desc">Décroissant</option>
+      <option value="default">Default</option>
+      <option value="price-asc">Ascending</option>
+      <option value="price-desc">Descending</option>
     </select>
   </div>
 </div>
@@ -92,7 +92,7 @@
 </center>
 <br>
     <center>
-      <a href="/ajouterArticle"><button id="boutonAjouterArticle">Ajouter article</button></a>
+      <a href="/ajouterArticle"><button id="boutonAjouterArticle">Add item</button></a>
     </center>
     <br>
     <div id="articles">
@@ -101,15 +101,15 @@
             <a href="/articles/<%= data[i].vetement_id %>" title="<%= data[i].marque_vetement %> - <%= data[i].nom_vetement %>">
             <img class="imgVetement" src="<%= data[i].image %>" alt="<%= data[i].nom_vetement %>"></a>
             <div class="NomEtPrix">
-              <div class="marqueVetement"><b>Marque :</b> <%= data[i].marque_vetement %></div>
-              <div class="nomVetement"><b>Nom :</b> <%= data[i].nom_vetement %></div>
-              <div class="tailleVetement"><b>Taille :</b> <%= data[i].taille_vetement %></div>
-              <div class="prix"><b>Prix :</b> <%= data[i].prix %> $</div>
+              <div class="marqueVetement"><b>Brand :</b> <%= data[i].marque_vetement %></div>
+              <div class="nomVetement"><b>Name :</b> <%= data[i].nom_vetement %></div>
+              <div class="tailleVetement"><b>Size :</b> <%= data[i].taille_vetement %></div>
+              <div class="prix"><b>Price :</b> <%= data[i].prix %> $</div>
             </div>
 
             <div class="buttons">
               <form action="/admin_articles/<%= data[i]._id %>?_method=DELETE" method="POST">
-                <button type="submit" class="buttonSupprimer">Supprimer</button>
+                <button type="submit" class="buttonSupprimer">Delete</button>
               </form>
             </div>
         </div>

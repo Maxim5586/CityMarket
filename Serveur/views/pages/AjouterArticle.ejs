@@ -28,12 +28,12 @@
       </button>
      <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/articles">Articles</a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/panier">Panier</a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/apropos">À propos</a></li>
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/articles">Items</a></li>
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/panier">Cart</a></li>
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/apropos">About</a></li>
                 <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/connexion"><%= page %></a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/inscription">Inscription</a></li>
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/inscription">Register</a></li>
                 <li class="nav-item hidden" id="ID" ><a class="nav-link px-lg-3 py-3 py-lg-4"  href="/admin_articles">Admin</a></li>
             </ul>
         </div>
@@ -48,30 +48,30 @@
 
 <body>
 <br><br><br><br><br><br>
-  <h2 class = "form-container">Ajouter un nouvel article</h2>
+  <h2 class = "form-container">Add a new item</h2>
   <br>
   <br>
   
   <div class="form-container">
     <form action="/ajoutVetement" method="POST" enctype="multipart/form-data">
         <div class="form-group">
-            <label for="name">Nom</label>
+            <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
         </div>
         <div class="form-group">
-            <label for="type">Type de vetements</label>
+            <label for="type">Type of clothing</label>
             <select id="type" name="type" required>
-                <option  value="" disabled selected>Sélectionnez le type de vêtement</option>
+                <option  value="" disabled selected>Select the type of clothing</option>
                 <option value="Shirt">Shirt</option>
-                <option value="Pantalon">Pantalon</option>
+                <option value="Pantalon">Pants</option>
                 <option value="Hoodie">Hoodie</option>
             </select>
         </div>
         <div class="form-group">
-            <label for="taille">Taille</label>
+            <label for="taille">Size</label>
             <select id="taille" name="taille" required>
-                <option  value="" disabled selected>Sélectionnez la taille du vêtement</option>
-                <option value="Petit">Petit</option>
+                <option  value="" disabled selected>Select the clothing size</option>
+                <option value="Petit">Small</option>
                 <option value="Medium">Medium</option>
                 <option value="Large">Large</option>
                 <option value="X-Large">X-Large</option>
@@ -80,15 +80,15 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="price">Prix</label>
+            <label for="price">Price</label>
             <input type="number" id="price" name="price" step="0.01" required>
         </div>
         <div class="form-group">
-            <label for="Quantité">Quantité</label>
+            <label for="Quantité">Quantity</label>
             <input type="number" id="Quantite" name="Quantite" step="1" required>
         </div>
         <div class="form-group">
-            <label for="marque">Marque</label>
+            <label for="marque">Brand</label>
             <input type="text" id="marque" name="marque" required>
         </div>
         <div class="form-group">
@@ -100,7 +100,7 @@
             <input type="file" id="image" name="image" accept="image/*" required>
         </div>
         <div class="form-group">
-            <input type="submit" value="Ajouter article">
+            <input type="submit" value="Add item">
         </div>
     </form>
 </div>

@@ -346,6 +346,14 @@ body {
   padding: 50px 0;
 }
 
+#contact-us form input[type="text"],
+#contact-us form input[type="email"],
+#contact-us form textarea {
+  width: 70%; /* Adjust the width as needed */
+  box-sizing: border-box; /* This includes padding and border in the element's total width */
+  margin-bottom: 10px; /* Add some space between input fields */
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -369,9 +377,10 @@ textarea {
 button {
   padding: 10px;
   background-color: #222;
+  width: 100px;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }

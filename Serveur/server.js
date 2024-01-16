@@ -17,7 +17,7 @@ import methodOverride from 'method-override';
 import bcrypt from 'bcrypt';
 import multer from 'multer';
 
-const {PORT = 3000} = process.env;
+const PORT = process.env.PORT;
 
 const app = express();
 app.use(cookieParser());
@@ -53,7 +53,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 export default logger;
 
-let page = "Connexion";
+let page = "Login";
 let adminLog = false;
 let adminCookie;
 
@@ -127,7 +127,7 @@ app.get('/', function(req, res) {
   try{
    if(req.headers.cookie != undefined){
     
-    page = "Déconnexion";
+    page = "Logout";
    }
   } catch(err){
     console.log(err);
@@ -140,7 +140,7 @@ app.get('/', function(req, res) {
 
 app.get('/apropos', function(req,res) {
   const data = {
-    pageTitre: 'À Propos',
+    pageTitre: 'About',
     page
 }
   checkCondition(req);
@@ -161,7 +161,7 @@ app.get('/fbMaxime', (req, res) => {
 
 app.get('/oublier-mdp', function(req,res) {
   const data = {
-    pageTitre: 'MDP oublier',
+    pageTitre: 'Forgot password',
     page
 }
 checkCondition(req);
@@ -376,7 +376,7 @@ app.get('/panier', async(req,res) => {
     let prixTotalFinal = (prixTotal * 1.15).toFixed(2);
     prixtotalFinal2 = prixTotalFinal;
     
-    res.render('pages/panier', { data: vetements_comm, pageTitre: "Panier", page, prixTotalFinal });
+    res.render('pages/panier', { data: vetements_comm, pageTitre: "Cart", page, prixTotalFinal });
   } catch (err) {
     console.error(err.message);
     res.status(500).send('Erreur');
@@ -419,7 +419,7 @@ app.get('/articles', async (req, res) => {
   try {
     const vetements = await vetement.find();
     checkCondition(req);
-    res.render('pages/articles', { data: vetements, pageTitre: "Articles", page });
+    res.render('pages/articles', { data: vetements, pageTitre: "Items", page });
   } catch (err) {
     console.error(err.message);
     res.status(500).send('Erreur');
@@ -471,7 +471,7 @@ app.get('/admin_articles', async (req, res) => {
   if (adminLog == true) {
     try {
       const vetements = await vetement.find();
-      res.render('pages/admin_articles', { data: vetements, pageTitre: "Admin_Articles", page });
+      res.render('pages/admin_articles', { data: vetements, pageTitre: "Admin_Items", page });
     } catch (err) {
       console.error(err.message);
       res.status(500).send('Erreur');
@@ -565,7 +565,7 @@ app.get('/connexion', function(req, res) {
      res.clearCookie('session');
      res.clearCookie('client_id');
      adminCookie = null;
-     page = "Connexion";
+     page = "Login";
      res.redirect('/');     
     }
     else{
@@ -585,7 +585,7 @@ app.get('/inscription',function(req, res){
   
     }
     else{
-      page = "Connexion"
+      page = "Login"
     }
    } catch(err){
     logger.info(err);
@@ -823,7 +823,7 @@ app.get('/ajouterArticle', async (req, res) => {
   if (adminLog == true) {
     try {
       const vetements = await vetement.find();
-      res.render('pages/ajouterArticle', { data: vetements, pageTitre: "Articles", page });
+      res.render('pages/ajouterArticle', { data: vetements, pageTitre: "Items", page });
     } catch (err) {
       console.error(err.message);
       res.status(500).send('Erreur');

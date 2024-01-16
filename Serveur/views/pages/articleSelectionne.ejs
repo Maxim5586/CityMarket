@@ -27,12 +27,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto py-4 py-lg-0">
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Accueil</a></li>
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/articles">Articles</a></li>
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/panier">Panier</a></li>
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/apropos">À propos</a></li>
+              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
+              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/articles">Items</a></li>
+              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/panier">Cart</a></li>
+              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/apropos">About</a></li>
               <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/connexion"><%= page %></a></li>
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/inscription">Inscription</a></li>
+              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/inscription">Register</a></li>
               <li class="nav-item hidden" id="ID" ><a class="nav-link px-lg-3 py-3 py-lg-4"  href="/admin_articles">Admin</a></li>
           </ul>
       </div>
@@ -52,8 +52,8 @@
     <div class="article-info">
         <h2 class="article-name"><%= item.marque_vetement %> - <%= item.nom_vetement %></h2>
         <p class="article-description"><b>Description :</b> <%= item.description %></p>
-        <p class="article-size"><b>Taille :</b> <%= item.taille_vetement %></p>
-        <p class="article-price"><b>Prix :</b> <%= item.prix %>$</p>
+        <p class="article-size"><b>Size :</b> <%= item.taille_vetement %></p>
+        <p class="article-price"><b>Price :</b> <%= item.prix %>$</p>
 
         <form action="/ajouterPanier" method="POST">
           <input type="hidden" name="vetement_id" value="<%= item.vetement_id %>">
@@ -64,7 +64,7 @@
           <input type="hidden" name="item_taille" value="<%= item.taille_vetement %>">
           <input type="hidden" name="item_prix" value="<%= item.prix %>">
   
-          <a href="/panier"><input type="hidden"><button class="add-to-cart">Ajouter au panier</button></input></a>
+          <a href="/panier"><input type="hidden"><button class="add-to-cart">Add to cart</button></input></a>
       </form>
     </div>
   </div>
@@ -73,7 +73,7 @@
     </div>
     <div class="creer-review-container">
       <br>
-      <button id="creerReview">Écrire un commentaire</button>
+      <button id="creerReview">Write a comment</button>
       <br><br>
     </div>
 
@@ -83,12 +83,12 @@
         <form action="/ajouter-commentaire" method="post">
           <input type="hidden" name="vetement_id" value="<%= item.vetement_id %>">
           <input type="hidden" name="client_id" value="<%= clientId %>">
-          <label for="commentaire">Commentaire:</label><br>
+          <label for="commentaire">Comment:</label><br>
           <hr>
           <textarea name="commentaire" id="commentaire" required></textarea>
           <br>
           <br>
-          <button class="boutonSoumettre" type="submit" name="buttonSoumettre">Soumettre</button>
+          <button class="boutonSoumettre" type="submit" name="buttonSoumettre">Submit</button>
         </form>
       </div>
     </div>
