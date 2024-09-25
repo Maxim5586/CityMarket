@@ -188,7 +188,7 @@ h1 {
         max-width: 100%;
     }
     .teams img {
-        width: 200px;
+        width: auto;
         height: 200px;
     }
 }
