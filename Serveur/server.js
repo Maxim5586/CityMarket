@@ -41,7 +41,7 @@ const logger = winston.createLogger({
   defaultMeta: { service: 'MongoDB' },
   transports: [
     new winston.transports.DailyRotateFile({ filename: 'application-%DATE%.log', datePattern: 'YYYY-MM-DD' }),
-    new winston.transports.MongoDB({ db: 'mongodb+srv://WEBSITE:lIUZk3cvWwMIC0IM@website.b2t4pkd.mongodb.net/HasbullahBD?retryWrites=true&w=majority', collection: 'logs' })
+    new winston.transports.MongoDB({ db: process.env.DATABASE_LINK, collection: 'logs' })
   ]
 });
 
@@ -66,7 +66,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
 
 
-const url = 'mongodb+srv://WEBSITE:lIUZk3cvWwMIC0IM@website.b2t4pkd.mongodb.net/HasbullahBD?retryWrites=true&w=majority';
+const url = process.env.DATABASE_LINK;
 
 const clientSchema = mongoose.model('client', new mongoose.Schema({
   id: String,
