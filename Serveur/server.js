@@ -907,6 +907,7 @@ app.get('/getVariableValue', (req, res) => {
 
 app.listen(PORT, ()=>{
     console.log(`Serveur démarré sur le port ${PORT}`);
+    console.log(`Lien: http://localhost:${PORT}`)
 });
 
 
