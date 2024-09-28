@@ -1,146 +1,202 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= pageTitre %></title>
-    <link rel="stylesheet" href="/CSS/articles.css">
+    <link rel="stylesheet" href="/CSS/articles.css" />
     <script src="/JS/articles.js"></script>
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="/CSS/styles.css" rel="stylesheet" />
-</head>
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/CSS/styles.css" rel="stylesheet" />
+  </head>
 
-<!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
-  <div class="container px-4 px-lg-5">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+    <div class="container px-4 px-lg-5">
       <a class="navbar-brand" href="/">CityMarket</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        Menu
+        <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ms-auto py-4 py-lg-0">
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/articles">Items</a></li>
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/panier">Cart</a></li>
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/apropos">About</a></li>
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/connexion"><%= page %></a></li>
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/inscription">Register</a></li>
-              <li class="nav-item hidden" id="ID" ><a class="nav-link px-lg-3 py-3 py-lg-4"  href="/admin_articles">Admin</a></li>
-          </ul>
+        <ul class="navbar-nav ms-auto py-4 py-lg-0">
+          <li class="nav-item">
+            <a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-lg-3 py-3 py-lg-4" href="/articles">Items</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-lg-3 py-3 py-lg-4" href="/panier">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-lg-3 py-3 py-lg-4" href="/apropos">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-lg-3 py-3 py-lg-4" href="/connexion"
+              ><%= page %></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-lg-3 py-3 py-lg-4" href="/inscription"
+              >Register</a
+            >
+          </li>
+          <li class="nav-item hidden" id="ID">
+            <a class="nav-link px-lg-3 py-3 py-lg-4" href="/admin_articles"
+              >Admin</a
+            >
+          </li>
+        </ul>
       </div>
-  </div>
-</nav>
-<!-- Page Header-->
-<header class="masthead" style="background-image: url('/images/Vetements.jpg')"; >
-  <div class="container position-relative px-4 px-lg-5">
+    </div>
+  </nav>
+  <!-- Page Header-->
+  <header
+    class="masthead"
+    style="background-image: url('/images/Vetements.jpg')"
+    ;
+  >
+    <div class="container position-relative px-4 px-lg-5">
       <div class="row gx-4 gx-lg-5 justify-content-center">
-          <div class="col-md-10 col-lg-8 col-xl-7">
-              <div class="site-heading">
-                  <h1>Items</h1>
-              </div>
+        <div class="col-md-10 col-lg-8 col-xl-7">
+          <div class="site-heading">
+            <h1>Items</h1>
           </div>
+        </div>
       </div>
-  </div>
-</header>
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Core theme JS-->
-<script src="/JS/scripts.js"></script>
+    </div>
+  </header>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="/JS/scripts.js"></script>
 
-
-<!-- Corps de la page -->
-<body>
+  <!-- Corps de la page -->
+  <body>
     <form id="search-form">
       <div class="search-wrapper">
-        <input type="text" id="search-input" placeholder="Search for an item">
+        <input type="text" id="search-input" placeholder="Search for an item" />
         <i class="fas fa-search search-icon"></i>
       </div>
     </form>
 
-<center>
-  <div id="container">  
-    <div class="filter-group">
-      <label for="brand-filter" style="color: whitesmoke;">Brand :</label>
-      <select id="brand-filter">
-        <option value="all">All</option>
-        <option value="Puma">Puma</option>
-        <option value="Nike">Nike</option>
-        <option value="Adidas">Adidas</option>
-        <option value="Gucci">Gucci</option>
-        <option value="TrapStar">TrapStar</option>
-      </select>
-    </div>
-
-    <div class="filter-group">
-      <label for="sort-order" style="color: whitesmoke;">Size :</label>
-      <select id="size-filter">
-        <option value="all">All sizes</option>
-        <option value="Petit">Small</option>
-        <option value="Medium">Medium</option>
-        <option value="Large">Large</option>
-        <option value="X-Large">X-Large</option>
-        <option value="XX-Large">XX-Large</option>
-      </select>
-    </div>
-
-    <div class="filter-group">
-      <label for="sort-order" style="color: whitesmoke;">Price :</label>
-      <select id="sort-order">
-        <option value="default">Default</option>
-        <option value="price-asc">Ascending</option>
-        <option value="price-desc">Descending</option>
-      </select>
-    </div>
-  </div>
-  <br>
-</center>
+    <center>
+      <div id="container">
+        <div class="filter-group">
+          <label for="brand-filter">
+            <i class="fas fa-tags"></i> Brand:
+          </label>
+          <select id="brand-filter">
+            <option value="all">All</option>
+            <option value="Puma">Puma</option>
+            <option value="Nike">Nike</option>
+            <option value="Adidas">Adidas</option>
+            <option value="Gucci">Gucci</option>
+            <option value="TrapStar">TrapStar</option>
+          </select>
+        </div>
+      
+        <div class="filter-group">
+          <label for="size-filter">
+            <i class="fas fa-tshirt"></i> Size:
+          </label>
+          <select id="size-filter">
+            <option value="all">All sizes</option>
+            <option value="Petit">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            <option value="X-Large">X-Large</option>
+            <option value="XX-Large">XX-Large</option>
+          </select>
+        </div>
+      
+        <div class="filter-group">
+          <label for="sort-order">
+            <i class="fas fa-dollar-sign"></i> Price:
+          </label>
+          <select id="sort-order">
+            <option value="default">Default</option>
+            <option value="price-asc">Ascending</option>
+            <option value="price-desc">Descending</option>
+          </select>
+        </div>
+      </div>
+      <br />
+    </center>
 
     <div id="articles">
       <% for (var i = 0; i < data.length; i++) { %>
-        <div class="vetements" data-marque="<%= data[i].marque_vetement %>" data-taille="<%= data[i].taille_vetement %>">
-          <a href="/articles/<%= data[i].vetement_id %>" title="<%= data[i].marque_vetement %> - <%= data[i].nom_vetement %>">
-            <img class="imgVetement" src="<%= data[i].image %>" alt="<%= data[i].nom_vetement %>">
-            <div class="nomVetement"><%= data[i].marque_vetement %> - <%= data[i].nom_vetement %></div>
-            <div class="tailleVetement"><%= data[i].taille_vetement %></div>
-            <div class="prix"><%= data[i].prix %> $</div>
-          </a>
-        </div>
-        <% } %>
+      <div
+        class="vetements"
+        data-marque="<%= data[i].marque_vetement %>"
+        data-taille="<%= data[i].taille_vetement %>"
+      >
+        <a
+          href="/articles/<%= data[i].vetement_id %>"
+          title="<%= data[i].marque_vetement %> - <%= data[i].nom_vetement %>"
+        >
+          <img
+            class="imgVetement"
+            src="<%= data[i].image %>"
+            alt="<%= data[i].nom_vetement %>"
+          />
+          <div class="nomVetement">
+            <%= data[i].marque_vetement %> - <%= data[i].nom_vetement %>
+          </div>
+          <div class="tailleVetement"><%= data[i].taille_vetement %></div>
+          <div class="prix"><%= data[i].prix %> $</div>
+        </a>
+      </div>
+      <% } %>
     </div>
     <!-- <img id="hasbullahPhone" src="/images/HasbullahWithPhone.png" alt=""> -->
+  </body>
 
-
-</body>
-
-<script>
-  function checkCondition() {
-    fetch('/getVariableValue')
-  .then(response => response.json())
-  .then(data => {
-    var variableValue = data.variableName;
-    console.log(variableValue);
-    if(variableValue == true){
-      var item = document.getElementById('ID');
-      item.style.display = 'block'
-    }else{
-      item.style.display = 'none'
+  <script>
+    function checkCondition() {
+      fetch("/getVariableValue")
+        .then((response) => response.json())
+        .then((data) => {
+          var variableValue = data.variableName;
+          console.log(variableValue);
+          if (variableValue == true) {
+            var item = document.getElementById("ID");
+            item.style.display = "block";
+          } else {
+            item.style.display = "none";
+          }
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
     }
-
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
-
-
-  }
-window.onload = checkCondition;
-</script>
+    window.onload = checkCondition;
+  </script>
 </html>
