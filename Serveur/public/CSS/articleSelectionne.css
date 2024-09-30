@@ -1,32 +1,32 @@
 body {
-    margin-top: 0 !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    background-size: 15%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 100%;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  background-size: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 body::before {
-    content: "";
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+  content: "";
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .boutonSoumettre {
-    border-radius: 50px;
-    font-size: 25px;
-    color: black;
-    padding: 5px 10px 5px;
-    background-color: whitesmoke;
-    transition: background-color 0.5s ease;
-    border: none;
+  border-radius: 50px;
+  font-size: 25px;
+  color: black;
+  padding: 5px 10px 5px;
+  background-color: whitesmoke;
+  transition: background-color 0.5s ease;
+  border: none;
 }
 
 .boutonSoumettre:hover {
@@ -35,20 +35,19 @@ body::before {
 }
 
 .reviews {
-    margin-left: 100px;
-    width: 80%;
-    margin: 0 auto;
+  width: 70%;
+  margin: 0 auto;
 }
-  
+
 #image_client {
   width: 8%;
   height: 8%;
   display: flex;
   margin-left: -10px;
 }
-  
+
 .client_review {
-  background-color: rgb(192, 181, 181);
+  background-color: #7f8c8d;
   color: whitesmoke;
   width: 1250px;
   height: fit-content;
@@ -57,32 +56,39 @@ body::before {
   box-shadow: 2px 2px 5px #3d3d3d;
   width: 100%;
 }
-  
+
 .contenu_review {
   margin-left: 20px;
 }
-  
+
 .client_info {
   display: flex;
   align-items: center;
 }
-  
+
 .client_details {
   margin-left: 20px;
 }
-  
+
+.creer-review-container {
+  width: 70%; /* Adjust this width to match the section width */
+  margin: 0 auto; /* Center the container */
+  display: flex;
+  justify-content: flex-end; /* Align the button to the right */
+  padding: 10px 0; /* Add some padding for spacing */
+}
+
 #creerReview {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 30px;
   color: black;
   border: none;
   border-radius: 20px;
-  margin-left: 1000px;
-  padding: 5px 10px 5px;
+  padding: 5px 10px;
   background-color: whitesmoke;
   transition: background-color 0.5s ease;
   margin-bottom: 10px;
-  position: relative;
+  cursor: pointer;
 }
 
 #creerReview:hover {
@@ -93,7 +99,7 @@ body::before {
 #buttonSoumettre {
   font-size: 22px;
   border: none;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: whitesmoke;
   background-color: rgb(192, 181, 181);
   border-radius: 10px;
@@ -106,7 +112,7 @@ body::before {
 }
 
 #commentaire {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   width: 1200px;
   height: 100px;
   border: none;
@@ -125,21 +131,15 @@ body::before {
 
 @media (max-width: 768px) {
   .reviews {
-    margin-left: 20px;
+    width: 80%;
   }
 
-  #creerReview {
-    margin-left: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  .article-container {
+    width: 90% !important;
   }
 }
 
 @media (max-width: 480px) {
-  .reviews {
-    margin-left: 10px;
-  }
-
   .contenu_review {
     margin-left: 15px;
   }
@@ -147,20 +147,14 @@ body::before {
   #commentaire {
     height: 80px;
   }
-
-  #creerReview {
-    margin-left: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }
 
 .article-container {
-  background-color: rgb(192, 181, 181);
+  background-color: #7f8c8d;
   border-radius: 30px;
   padding: 30px;
   margin: 20px auto;
-  width: 1200px;
+  width: 60%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -219,6 +213,11 @@ body::before {
 @media (max-width: 768px) {
   .article-container {
     flex-direction: column;
+  }
+
+  .creer-review-container {
+    justify-content: center;
+    width: 50%;
   }
 
   .article-image {

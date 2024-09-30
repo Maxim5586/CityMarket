@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
     buttonAfficher.addEventListener('click', function() {
         if (div.style.display === 'none' || div.style.display === '') {
             div.style.display = 'flex';
-            buttonAfficher.innerHTML = 'Fermer le commentaire';
+            buttonAfficher.innerHTML = 'Close Comment';
         } else {
             div.style.display = 'none';
-            buttonAfficher.innerHTML = 'Écrire un commentaire';
+            buttonAfficher.innerHTML = 'Write a Comment';
         }
     });
 });

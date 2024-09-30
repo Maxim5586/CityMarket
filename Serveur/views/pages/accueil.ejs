@@ -1,146 +1,274 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CityMarket</title>
-    <link rel="stylesheet" href="/CSS/accueil.css"> 
+    <link rel="stylesheet" href="/CSS/accueil.css" />
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="/CSS/styles.css" rel="stylesheet" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/CSS/styles.css" rel="stylesheet" />
 
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
-<script src="https://smtpjs.com/v3/smtp.js"></script>  
-</head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
 
-<body>
-  <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
-    <div class="container px-4 px-lg-5">
+  <body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+      <div class="container px-4 px-lg-5">
         <a class="navbar-brand" href="/">CityMarket</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars"></i>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/articles">Items</a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/panier">Cart</a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/apropos">About</a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/connexion"><%= page %></a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/inscription">Register</a></li>
-                <li class="nav-item hidden" id="ID" ><a class="nav-link px-lg-3 py-3 py-lg-4"  href="/admin_articles">Admin</a></li> 
-            </ul>
+          <ul class="navbar-nav ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-3 py-3 py-lg-4" href="/articles"
+                >Catalog</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-3 py-3 py-lg-4" href="/panier">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-3 py-3 py-lg-4" href="/apropos">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-3 py-3 py-lg-4" href="/connexion"
+                ><%= page %></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-3 py-3 py-lg-4" href="/inscription"
+                >Sign Up</a
+              >
+            </li>
+            <li class="nav-item hidden" id="ID">
+              <a class="nav-link px-lg-3 py-3 py-lg-4" href="/admin_articles"
+                >Admin</a
+              >
+            </li>
+          </ul>
         </div>
-    </div>
-</nav>
-<!-- Page Header-->
-<header class="masthead" style="background-image: url('/images/pinkblack.jpg')"; >
-    <div class="container position-relative px-4 px-lg-5">
+      </div>
+    </nav>
+    <!-- Page Header-->
+    <header
+      class="masthead"
+      style="background-image: url('/images/Deep Teal Background.png')"
+      ;
+    >
+      <div class="container position-relative px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-md-10 col-lg-8 col-xl-7">
-                <div class="site-heading">
-                    <h1>City Market</h1>
-                    <span class="subheading">Everything there is, we have it</span>
-                </div>
+          <div class="col-md-10 col-lg-8 col-xl-7">
+            <div class="site-heading">
+              <h1>City Market</h1>
+              <span class="subheading">Everything there is, we have it</span>
             </div>
+          </div>
         </div>
-    </div>
-</header>
-<main>
-  <br><br><br>
-    <section id="about-us">
-        <img src="/images/aboutus.jpg" alt="Image About Us">
-        <div id="about-us-text">           
+      </div>
+    </header>
+    <main>
+      <br /><br /><br />
+      <section id="about-us">
+        <img src="/images/aboutus.jpg" alt="Image About Us" />
+        <div id="about-us-text">
           <h1>About Us</h1>
-          <h5>We are an ethical and sustainable clothing brand, striving to create premium quality clothing while respecting the environment.</h5>
+          <h5>
+            We offer a curated selection of premium clothing from trusted
+            brands, ensuring quality and style for every occasion. Our mission
+            is to provide our customers with the best choices in fashion, all
+            while offering a seamless shopping experience
+          </h5>
           <a href="/apropos">
-            <button id ="apropos" type="button" style="width: 22%;">About</button>
+            <button id="apropos" type="button" style="width: 22%">
+              Learn More
+            </button>
           </a>
         </div>
-       
       </section>
-  
-      <section class="slideshow">
-        <a href="/articles">
-        <div class="slideshow-container">
-         <img class="slide" src="images/trapstar.png">
-          <img class="slide" src="images/nikelogo.png">
-          <img class="slide" src="images/pumalogo.png">
-          <img class="slide" src="images/adidas.png">
-            
-        </div>  
-        </a>
-      
-        <a class="prev">&#10094;</a>
-        <a class="next">&#10095;</a>
-        
+
+      <section
+        id="brand-carousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="testimonial">
+              <img src="/images/puma-logo.png" class="brand-img" alt="Puma" />
+              <p class="testimonial-text">"FOREVER. FASTER"</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial">
+              <img
+                src="/images/adidas-logo.png"
+                class="brand-img"
+                alt="Adidas"
+              />
+              <p class="testimonial-text">"Impossible is Nothing"</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial">
+              <img
+                src="/images/gucci-logo.png"
+                class="brand-img"
+                alt="Trapstar"
+              />
+              <p class="testimonial-text">
+                "Quality is remembered long after price is forgotten"
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial">
+              <img src="/images/nike-logo.png" class="brand-img" alt="Nike" />
+              <p class="testimonial-text">"Just Do It"</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#brand-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#brand-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+        <!-- Dots for pagination -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#brand-carousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#brand-carousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#brand-carousel"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#brand-carousel"
+            data-bs-slide-to="3"
+          ></button>
+        </div>
       </section>
-    
-    
+
       <a href="/articles">
         <center>
-          <button id ="articles" type="button" style="width: 90%;"> Our collections</button>
+          <button id="articles" type="button" style="width: 90%">
+            Discover Our Collection
+          </button>
         </center>
       </a>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <section id="contact-us">
         <center>
           <h2>Contact Us</h2>
         </center>
-        <br>
+        <br />
         <form action="/envoyerEmail" method="POST">
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
+          <input type="text" id="name" name="name" required />
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" required />
           <label for="message">Message</label>
           <textarea id="message" name="message" required></textarea>
-          <button type="submit" style="border-radius: 10px;">Send</button>
+          <button type="submit" style="border-radius: 10px">Send</button>
         </form>
       </section>
-  </main>
+    </main>
 
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Core theme JS-->
-<script src="/JS/scripts.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="/JS/scripts.js"></script>
 
-<script>
-  function checkCondition() {
-
-    fetch('/getVariableValue')
-  .then(response => response.json())
-  .then(data => {
-    var variableValue = data.variableName;
-    console.log(variableValue);
-    if(variableValue == true){
-      var item = document.getElementById('ID');
-      item.style.display = 'block'
-    }else{
-      item.style.display = 'none'
-    }
-
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
-
-
-  }
-window.onload = checkCondition;
-</script>
-
-</body>
+    <script>
+      function checkCondition() {
+        fetch("/getVariableValue")
+          .then((response) => response.json())
+          .then((data) => {
+            var variableValue = data.variableName;
+            console.log(variableValue);
+            if (variableValue == true) {
+              var item = document.getElementById("ID");
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      }
+      window.onload = checkCondition;
+    </script>
+  </body>
+</html>

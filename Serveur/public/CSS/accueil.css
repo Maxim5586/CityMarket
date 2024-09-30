@@ -6,10 +6,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.box{
+.box {
   position: relative;
   width: 380px;
   height: 420px;
@@ -18,45 +18,57 @@ body {
   overflow: hidden;
 }
 
-.box::before{
-  content: '';
+.box::before {
+  content: "";
   position: absolute;
   top: -50%;
   left: -50%;
   width: 380px;
   height: 420px;
-  background: linear-gradient(0deg,transparent, transparent, #45f3ff,#45f3ff,#45f3ff );
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent,
+    #45f3ff,
+    #45f3ff,
+    #45f3ff
+  );
   z-index: 1;
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
 }
 
-.box::after{
-  content: '';
+.box::after {
+  content: "";
   position: absolute;
   top: -50%;
   left: -50%;
   width: 380px;
   height: 420px;
-  background: linear-gradient(0deg,transparent, transparent, #45f3ff,#45f3ff,#45f3ff );
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent,
+    #45f3ff,
+    #45f3ff,
+    #45f3ff
+  );
   z-index: 1;
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
   animation-delay: -3s;
 }
 
-@keyframes animate{
-  0%
-  {
-      transform: rotate(0deg);
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
   }
-  100%
-  {
-      transform: rotate(360deg);
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-.box form{
+.box form {
   position: absolute;
   inset: 4px;
   background: #224;
@@ -67,8 +79,7 @@ body {
   flex-direction: column;
 }
 
-.box form h2
-{
+.box form h2 {
   color: #fff;
   font-weight: 500;
   text-align: center;
@@ -81,12 +92,11 @@ body {
   margin-top: 35px;
 }
 
-.box form .inputBox input
-{
+.box form .inputBox input {
   position: relative;
   width: 100%;
   padding: 20px 10px 10px;
-  background:  transparent;
+  background: transparent;
   outline: none;
   border: none;
   box-shadow: none;
@@ -97,53 +107,47 @@ body {
   z-index: 10;
 }
 
-.box form .inputBox span{
- position: absolute;
- left: 0;
- padding: 20px 10px 10px;
- pointer-events: none;
- color: #8f8f8f;
- font-size: 1em;
- letter-spacing: 0.05em;
- transition: 0.5s;
+.box form .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 10px 10px;
+  pointer-events: none;
+  color: #8f8f8f;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
 }
 .box form .inputBox input:valid ~ span,
-.box form .inputBox input:focus ~ span
-{
+.box form .inputBox input:focus ~ span {
   color: #fff;
   font-size: 0.75em;
- transform: translateY(-34px);
+  transform: translateY(-34px);
 }
 
-.box form .inputBox i
-{
+.box form .inputBox i {
   position: absolute;
   left: 0;
   bottom: 0;
-  width:  100%;
+  width: 100%;
   height: 2px;
   background: #fff;
   border-radius: 4px;
   overflow: hidden;
   transition: 0.5s;
   pointer-events: none;
-
 }
 
 .box form .inputBox input:valid ~ i,
-.box form .inputBox input:focus ~ i{
+.box form .inputBox input:focus ~ i {
   height: 44px;
 }
 
-
-.box form .links
-{
+.box form .links {
   display: flex;
   justify-content: space-between;
 }
 
-.box form .links a
-{
+.box form .links a {
   margin: 10 px 0;
   font-size: 0.75em;
   color: #8f8f8f;
@@ -151,12 +155,11 @@ body {
 }
 
 .box form .links a:hover,
-.box form .links a:nth-child(2){
+.box form .links a:nth-child(2) {
   color: #fff;
 }
 
-.box form input[type="submit"]
-{
+.box form input[type="submit"] {
   border: none;
   outline: none;
   padding: 9px 25px;
@@ -167,19 +170,15 @@ body {
   font-weight: 600;
   width: 200px;
   margin-top: 10px;
-
 }
 
-.box form input[type="submit"]:active
-{
+.box form input[type="submit"]:active {
   opacity: 0.8;
 }
 
-
-
-#about-us img {  
+#about-us img {
   height: auto;
-   width: 420px;
+  width: 420px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -188,7 +187,7 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-#about-us{
+#about-us {
   width: 1130px;
   max-width: 95%;
   margin: 0 auto;
@@ -201,157 +200,181 @@ body {
   justify-content: space-around;
 }
 
-#about-us-text{
+#about-us-text {
   width: 550px;
-} 
+}
 
 #about-us-text h1 {
   color: aliceblue;
   font-size: 80px;
-  text-transform: capitalize;
-  margin-bottom: 20px;  
+  margin-bottom: 20px;
 }
 
 #about-us-text h5 {
   color: aliceblue;
   font-size: 25px;
-  text-transform: capitalize;
-  margin-bottom: 25px;  
+  margin-bottom: 25px;
   letter-spacing: 2px;
 }
 
-#span{
-  color: #f9004d;
+#span {
+  color: #7f8c8d;
 }
 
-#apropos{
-  background: #f9004d;
+#apropos {
+  background: #7f8c8d;
   color: aliceblue;
   text-decoration: none;
   border: 2px solid transparent;
   font-weight: bold;
+  width: 250px !important;
   padding: 13px 30px;
   border-radius: 30px;
-  transition: transform 0.3s ease-in-out;  
+  transition: all 0.3s ease !important;
 }
 
-#apropos:hover{
-  background: transparent;
-  border: 2px solid #f9004d;
-  cursor: pointer;
-  transform: scale(1.05); 
-  transition: transform 0.3s ease-in-out; 
+#apropos:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
-@media only screen and (max-width: 1030px) {
-  #about-us {
-    flex-direction: column-reverse; 
-  }
-  #about-us-image {
-      width: 100%; 
-      margin-bottom: 20px; 
-    }
-  
-    #about-us-text {
-      width: 100%; 
-    }
-
-    #apropos{ 
-      width: 100%; 
-      margin-bottom: 20px; 
-      
-      }
-
-      #articles{ 
-          width: 100%; 
-          margin-bottom: 20px; 
-          
-          }
-
-  }
+#apropos:active {
+  transform: scale(0.98);
+  transition: transform 0.3s ease-in-out;
+}
 
 /* Style pour la section Nos Collections */
-.slideshow {
+#brand-carousel {
+  background-color: #e1e5ea;
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
-  height: auto;
-  width: auto;
-  overflow: hidden;
-}
-
-.slideshow-container {
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 100%;
- }
-
-
-
-.slideshow-container img:hover {
-  transform: scale(1.05); 
-  transition: transform 0.3s ease-in-out; 
-}
-.slide {
-  width: 100%;
-  height: 100%;
-  object-fit:contain;
-  flex-shrink: 0;
-}
-
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  display: block;
-  font-size: 30px;
-  font-weight: bold;
-  padding: 10px;
+  margin: 0 auto;
+  width: 60%;
+  height: 700px;
+  margin-top: 100px;
+  margin-bottom: 50px;
   color: white;
+}
+
+.carousel-inner {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.brand-img {
+  height: 400px;
+  width: auto;
+}
+
+.testimonial-text {
+  margin-top: 120px;
+  font-size: 20px;
+  font-style: italic;
+  color: black;
+}
+
+/* Custom Buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%; /* Place the buttons in the middle vertically */
+  transform: translateY(500%); /* Adjusts the position to be centered */
+  width: 60px !important;
+  height: 60px !important;
+  background-color: black !important;
+  border-radius: 20px;
+  border: none;
+  transition: all 0.3s ease !important;
+}
+
+/* Move the previous button closer to the center */
+.carousel-control-prev {
+  left: 30px !important;
+}
+
+/* Move the next button closer to the center */
+.carousel-control-next {
+  right: 30px !important;
+}
+
+.carousel-control-prev:active,
+.carousel-control-next:active {
+  transform: scale(0.9) translateY(550%) !important; /* Shrinks the button */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: no-repeat center center;
+  background-size: 100% 100%;
+  transition: all 0.3s ease !important;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-indicators button {
+  background-color: #272727 !important;
+  border: none;
   cursor: pointer;
-  transition: 0.3s ease-in-out;
 }
 
-.next {
-  right: 0;
+.carousel-indicators .active {
+  background-color: black !important;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-#articles{
-  background: #f9004d;
-  color: aliceblue;
+#articles {
+  background: #7f8c8d;
+  color: white;
   text-decoration: none;
   border: 2px solid transparent;
+  font-size: 25px;
   font-weight: bold;
   padding: 13px 30px;
   border-radius: 30px;
-  transition: transform 0.3s ease-in-out; 
-  width: 100%         
+  transition: all 0.3s ease !important;
+  width: 58% !important;
 }
 
-#articles:hover{
-  background: transparent;
-  border: 2px solid #f9004d;
+#articles:hover {
+  opacity: 0.8;
   cursor: pointer;
-  transform: scale(1.05); 
-  transition: transform 0.3s ease-in-out;
+  transform: scale(1.03);
+}
+
+#articles:active {
+  transform: scale(0.98);
 }
 
 /* Style pour la section Contact Us */
 #contact-us {
-  background-color: #e0e0e0;
+  background-color: #405361;
   padding: 50px 0;
+  color: white;
 }
 
 #contact-us form input[type="text"],
 #contact-us form input[type="email"],
 #contact-us form textarea {
-  width: 70%; /* Adjust the width as needed */
+  width: 40%; /* Adjust the width as needed */
   box-sizing: border-box; /* This includes padding and border in the element's total width */
-  margin-bottom: 10px; /* Add some space between input fields */
+  margin-bottom: 20px; /* Add some space between input fields */
+  text-align: center;
+}
+
+#contact-us form textarea {
+  font-size: 18px;
+  height: 100px;
+  text-align: left;
 }
 
 form {
@@ -376,9 +399,9 @@ textarea {
 
 button {
   padding: 10px;
-  background-color: #222;
+  background-color: #ffffff;
   width: 100px;
-  color: #fff;
+  color: black;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -386,7 +409,8 @@ button {
 }
 
 button:hover {
-  background-color: #111;
+  background-color: #23242a;
+  color: white;
 }
 
 .hidden {
@@ -397,26 +421,124 @@ button:hover {
   display: inline-block;
   position: relative;
 }
+
 .dropdown-content {
   display: none;
   position: absolute;
   width: 100%;
   overflow: auto;
-  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 .dropdown-content a {
   display: block;
   color: #000000;
   padding: 5px;
   text-decoration: none;
 }
+
 .dropdown-content a:hover {
-  color: #FFFFFF;
-  background-color: #00A4BD;
+  color: #ffffff;
+  background-color: #00a4bd;
 }
 
+@media only screen and (max-width: 1030px) {
+  #about-us {
+    flex-direction: column-reverse;
+  }
 
+  #about-us img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
 
+  #about-us-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  #apropos {
+    width: 50% !important;
+    margin-bottom: 20px;
+  }
+
+  #articles {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  #contact-us form input[type="text"],
+  #contact-us form input[type="email"],
+  #contact-us form textarea {
+    width: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  #brand-carousel {
+    height: 450px;
+    width: 70%;
+  }
+  .brand-img {
+    height: 200px;
+  }
+
+  .testimonial-text {
+    font-size: 15px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    transform: translateY(450%); /* Adjusts the position to be centered */
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 15px;
+  }
+
+  .carousel-control-prev {
+    left: 0px !important;
+  }
+
+  /* Move the next button closer to the center */
+  .carousel-control-next {
+    right: 0px !important;
+  }
+}
+
+@media (max-width: 550px) {
+  #brand-carousel {
+    height: 400px;
+    width: 80%;
+  }
+  .brand-img {
+    max-height: 100px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    transform: translateY(500%); /* Adjusts the position to be centered */
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 15px;
+  }
+
+  .carousel-control-prev {
+    left: 0px !important;
+  }
+
+  /* Move the next button closer to the center */
+  .carousel-control-next {
+    right: 0px !important;
+  }
+
+  #articles {
+    width: 80% !important;
+    font-size: 20px;
+  }
+}

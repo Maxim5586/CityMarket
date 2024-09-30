@@ -28,11 +28,11 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto py-4 py-lg-0">
               <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/articles">Items</a></li>
+              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/articles">Catalog</a></li>
               <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/panier">Cart</a></li>
               <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/apropos">About</a></li>
               <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/connexion"><%= page %></a></li>
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/inscription">Register</a></li>
+              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/inscription">Sign Up</a></li>
               <li class="nav-item hidden" id="ID" ><a class="nav-link px-lg-3 py-3 py-lg-4"  href="/admin_articles">Admin</a></li>
           </ul>
       </div>
@@ -54,40 +54,42 @@
   </form>
 
 <center>
-<div id="container">  
-  <div class="filter-group">
-    <label for="brand-filter" style="color: whitesmoke;">Brand:</label>
-    <select id="brand-filter">
-      <option value="all">All</option>
-      <option value="Puma">Puma</option>
-      <option value="Nike">Nike</option>
-      <option value="Adidas">Adidas</option>
-      <option value="Gucci">Gucci</option>
-      <option value="TrapStar">TrapStar</option>
-    </select>
-  </div>
+  <div id="container">
+    <div class="filter-group">
+      <label for="brand-filter"> <i class="fas fa-tags"></i> Brand: </label>
+      <select id="brand-filter">
+        <option value="all">All</option>
+        <option value="Puma">Puma</option>
+        <option value="Nike">Nike</option>
+        <option value="Adidas">Adidas</option>
+        <option value="Gucci">Gucci</option>
+        <option value="TrapStar">TrapStar</option>
+      </select>
+    </div>
 
-  <div class="filter-group">
-    <label for="sort-order" style="color: whitesmoke;">Size :</label>
-    <select id="size-filter">
-      <option value="all">All sizes</option>
-      <option value="Petit">Petit</option>
-      <option value="Medium">Medium</option>
-      <option value="Large">Large</option>
-      <option value="X-Large">X-Large</option>
-      <option value="XX-Large">XX-Large</option>
-    </select>
-  </div>
+    <div class="filter-group">
+      <label for="size-filter"> <i class="fas fa-tshirt"></i> Size: </label>
+      <select id="size-filter">
+        <option value="all">All sizes</option>
+        <option value="Petit">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="Large">Large</option>
+        <option value="X-Large">X-Large</option>
+        <option value="XX-Large">XX-Large</option>
+      </select>
+    </div>
 
-  <div class="filter-group">
-    <label for="sort-order" style="color: whitesmoke;">Price :</label>
-    <select id="sort-order">
-      <option value="default">Default</option>
-      <option value="price-asc">Ascending</option>
-      <option value="price-desc">Descending</option>
-    </select>
+    <div class="filter-group">
+      <label for="sort-order">
+        <i class="fas fa-dollar-sign"></i> Price:
+      </label>
+      <select id="sort-order">
+        <option value="default">Default</option>
+        <option value="price-asc">Ascending</option>
+        <option value="price-desc">Descending</option>
+      </select>
+    </div>
   </div>
-</div>
 <br>
 </center>
 <br>
